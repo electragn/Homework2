@@ -1,0 +1,55 @@
+---
+title: "Homework 1"
+author: "Giannopoulou Ilektra Eleni - 23202690"
+date: today
+format: pdf
+fontsize: 12pt
+---
+
+# "Analysis of the Iris Dataset"
+
+## Introduction
+
+The \textcolor{blue}{iris} dataset provides the measurements in centimeters of the variables sepal length and width, and petal length and width, for 50 flowers from each of three species of iris. The species are __Iris setosa__, __Iris versicolor__, and __Iris virginica__.
+
+
+## Data Overview
+
+The dataset consists of 150 observations with five variables: Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, and Species. Each variable represents a measurement in centimeters, except for Species, which is a factor variable with three levels.
+
+_Descriptive Statistics_:
+
+```{r}
+#| echo: false
+#load the iris dataset
+data(iris)
+
+#generate summary statistics
+summary_statistics = summary(iris[,1:4])
+
+#print the table
+knitr::kable(summary_statistics, caption = "Summary Statistics of Iris Dataset")
+```
+
+
+## Histogram of Sepal Width
+
+_Approach Explanation_:
+
+To analyze the \textcolor{blue}{iris} dataset, first of all we need to have loaded the data using the __data()__ function. Next, we will create a histogram of the _Sepal Width_ variable to visualize its distribution. To accomplish this task, we will use the __hist()__ function with custom colors and border parameters to improve the visual appeal of the plot.
+
+```{r}
+#| echo: false
+
+#plotting histogram of sepal width
+hist(iris$Sepal.Width,
+     main = "Histogram of Sepal Width",
+     xlab = "Sepal Width (cm)",
+     col = "lightblue",
+     border = "midnightblue")
+```
+
+This histogram illustrates the distribution of _Sepal Width_ across the \textcolor{blue}{iris} dataset, showing a __normal distribution__ with a central peak around the mean. The most frequent sepal width values range between about 2.5 and 3.5 cm confirming the result of the summary statistic above.
+
+
+
