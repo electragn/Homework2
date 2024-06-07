@@ -45,7 +45,7 @@ To analyze the \textcolor{blue}{iris} dataset, first of all we need to have load
 hist(iris$Sepal.Width,
      main = "Histogram of Sepal Width",
      xlab = "Sepal Width (cm)",
-     col = "lightblue",
+     col = "purple",
      border = "midnightblue")
 ```
 
