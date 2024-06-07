@@ -10,7 +10,7 @@ fontsize: 12pt
 
 ## Introduction
 
-The \textcolor{blue}{iris} dataset provides the measurements in centimeters of the variables sepal length and width, and petal length and width, for 50 flowers from each of three species of iris. The species are __Iris setosa__, __Iris versicolor__, and __Iris virginica__.
+The \textcolor{blue}{iris} dataset provides the measurements in centimeters of the variables sepal length and width, and petal length and width, for 50 flowers from each of three species of iris. The species are ___Iris setosa___, ___Iris versicolor___, and ___Iris virginica___.
 
 
 ## Data Overview
